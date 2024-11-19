@@ -1,7 +1,7 @@
 import os
 from PIL import Image
 
-# Ruta a la carpeta principal donde están organizadas las imágenes por frutas
+# Ruta a la carpeta principal donde están las imágenes por frutas
 ruta_carpeta = 'C:\\Users\\joelm\\Desktop\\Newfolder\\data_organizada'  # Reemplaza con la ruta de tu carpeta principal de imágenes
 
 # Tamaño deseado
@@ -22,7 +22,7 @@ for carpeta_fruta in os.listdir(ruta_carpeta):
                     # Redimensiona la imagen
                     img_resized = img.resize(nuevo_tamano)
                     
-                    # Guarda la imagen redimensionada, reemplazando la original
+                    # Guardar la imagen redimensionada, reemplazando la original
                     img_resized.save(ruta_imagen)
                     print(f"Redimensionado: {ruta_imagen}")
 
